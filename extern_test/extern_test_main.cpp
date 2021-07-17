@@ -6,7 +6,7 @@
 #include "iostream"
 using namespace std;
 extern int extern_variable;
-int main() {
-  cout << "extern_variable = " << extern_variable;
-}
+//int main() {
+//  cout << "extern_variable = " << extern_variable;
+//}
 

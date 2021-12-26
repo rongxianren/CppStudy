@@ -46,19 +46,19 @@ class ThreadTest {
   std::mutex my_mutex;
 };
 
-int main() {
-  ThreadTest thread_test;
-  std::thread thread_consume1(&ThreadTest::ConsumeMessage, &thread_test);
-
-  std::thread thread_product1(&ThreadTest::ProductMessage, &thread_test);
-  std::thread thread_product2(&ThreadTest::ProductMessage, &thread_test);
-  std::thread thread_product3(&ThreadTest::ProductMessage, &thread_test);
-
-  std::condition_variable cv;
-  std::mutex my_mutex;
-  auto lock = std::unique_lock(my_mutex);
-
-  thread_consume1.join();
-  thread_product1.join();
-  return 0;
-}
+//int main() {
+//  ThreadTest thread_test;
+//  std::thread thread_consume1(&ThreadTest::ConsumeMessage, &thread_test);
+//
+//  std::thread thread_product1(&ThreadTest::ProductMessage, &thread_test);
+//  std::thread thread_product2(&ThreadTest::ProductMessage, &thread_test);
+//  std::thread thread_product3(&ThreadTest::ProductMessage, &thread_test);
+//
+//  std::condition_variable cv;
+//  std::mutex my_mutex;
+//  auto lock = std::unique_lock(my_mutex);
+//
+//  thread_consume1.join();
+//  thread_product1.join();
+//  return 0;
+//}

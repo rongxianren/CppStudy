@@ -29,6 +29,7 @@ class SubDeriveClass : public DeriveClass {
 
 int main() {
   ///
+  ///
   SubDeriveClass* obj = new SubDeriveClass();
   DeriveClass* base = obj;
   delete base;
